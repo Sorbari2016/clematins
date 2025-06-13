@@ -66,11 +66,12 @@ a[href^="mailto"] {
 .main_btn {
     width: 150px;
     height: 40px;
-    border-radius: 0;
+    border-radius: 0; 
+    border: 2px solid #3D8D7A;
     background-color: inherit; 
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
-    border-bottom: 4px solid black;
-    border-right: 4px solid black;   
+    border-bottom: 4px solid #3D8D7A;
+    border-right: 4px solid #3D8D7A;   
     cursor: pointer;
 }
 
@@ -99,7 +100,7 @@ a[href^="mailto"] {
 
 .hero_rt {
     display: flex ;
-    justify-content: center ;
+    justify-content: center;
 }
 
 img {
@@ -124,3 +125,12 @@ p span {
     margin-bottom: 4rem;
 }
 
+
+/* PROJECT SECTION */
+.project_section {
+}
+
+.project_section h1 {
+    text-align: center;
+    padding-top: 1rem;
+}
