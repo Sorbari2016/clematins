@@ -10,3 +10,9 @@
 body {
     font-family: "Merriweather", serif;
 }
+
+.wrap {
+    display: grid;
+    grid-template-rows: 1fr repeat(2, 5fr) 1fr; 
+}
+
