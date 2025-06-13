@@ -14,7 +14,7 @@ body {
 /* Make main container grid */
 .wrap {
     display: grid;
-    grid-template-rows: 0.5fr repeat(2, 5fr) 0.5fr; 
+    grid-template-rows: 1fr repeat(2, 5fr) 1fr; 
 }
 
 .lf_pd {
@@ -54,7 +54,7 @@ header {
 
 /* Links color & weight */
 a {
-    color: #18230F;
+    color: #3D8D7A;
     font-weight: 550;
 }
 
@@ -82,3 +82,45 @@ a[href^="mailto"] {
     color: #fbffe4;
     background-color: #A3D1C6;
 }
+
+/* HERO SECTION */
+.hero_section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #FBFFE4;
+    color: #243642;
+}
+
+.hero_lf {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero_rt {
+    display: flex ;
+    justify-content: center ;
+}
+
+img {
+    height: 500px;
+}
+
+.hero_lf p:nth-child(1) {
+    padding-bottom: 1rem;
+}
+
+p span {
+    margin-left: 11rem;
+}
+
+.hero_lf h1 {
+    padding-bottom: 0.25rem; 
+    font-size: 60px;
+    font-family: 
+}
+
+.hero_lf h3 {
+    margin-bottom: 4rem;
+}
+
