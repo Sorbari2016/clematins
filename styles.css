@@ -1,6 +1,6 @@
 /* STYLING RULES */
 
-
+/* GENERAL RULES */
 * {
     padding: 0; 
     margin:0; 
@@ -8,11 +8,77 @@
 }
 
 body {
-    font-family: "Merriweather", serif;
+    font-family: sans-serif;
 }
 
+/* Make main container grid */
 .wrap {
     display: grid;
-    grid-template-rows: 1fr repeat(2, 5fr) 1fr; 
+    grid-template-rows: 0.5fr repeat(2, 5fr) 0.5fr; 
 }
 
+.lf_pd {
+    padding-left: 3rem;
+}
+
+
+/* TOP SECTION */
+
+.top_section {
+    background-color: #b3d8a8
+}
+
+
+header {
+    display: grid; 
+    grid-template-columns: 3fr 1fr;
+    gap: 5rem;
+    height: 100%;
+    align-items: center;
+}
+
+.h_link {
+    font-family: 'Segoe UI',sans-serif;
+}
+
+.left_h_links {
+    display: flex;
+    gap: 2rem; 
+}
+
+.right_h_links {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* Links color & weight */
+a {
+    color: #18230F;
+    font-weight: 550;
+}
+
+/* Remove the formating of the email link */
+a[href^="mailto"] {
+    text-decoration: none;
+}
+
+.main_btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 0;
+    background-color: inherit; 
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;   
+    cursor: pointer;
+}
+
+.main_btn a {
+    text-decoration: none;
+}
+
+.main_btn:hover, a:hover {
+    color: #fbffe4;
+    background-color: #A3D1C6;
+}
